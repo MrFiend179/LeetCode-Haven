@@ -1,18 +1,3 @@
-// var removeZeroSumSublists = function(head) {
-//     const reutnrrray = []
-//     var slow = head
-//     var fast = head
-//     for (let i = 0; i < head.length; i++) {
-//         slow = head.next
-//         fast = head.next.next
-//         if(slow/fast === 0 ||slow/fast < 0 ){
-//             reutnrrray.push(slow)
-//         }
-//     }
-//     return reutnrrray   
-// };
-
-// console.log(removeZeroSumSublists([1,2,-3,3,1]))
 var removeZeroSumSublists = function(head) {
     let dummy = new ListNode(0);
     dummy.next = head;
